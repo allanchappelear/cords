@@ -3,14 +3,14 @@ $( document ).ready(function() {
 	setTimeout(function(){
   		$('#section0 #header-intro').addClass('in');
   		$('#section0 #header-intro')[0].play();
-	}, 1);
+	}, 1000);
 	setTimeout(function(){
   		$('#section0 p').addClass('in');
-	}, 9000);
+	}, 10000);
 
 	setTimeout(function(){
   		$('#section0 h1').addClass('in');
-	}, 6000);
+	}, 7000);
 
 	
 	

@@ -110,6 +110,7 @@ body {
 		transition: transform .8s ease-out !important;
 	}
 	.header {
+		text-align: center;
 		video {
 			position: fixed;
 			width: 100vw;
@@ -128,6 +129,7 @@ body {
 			position: relative;
 			background: none;
 			width: 75vw;
+			margin: 0 auto;
 			h1 {
 				margin-top: 10vh;
 			}
