@@ -25,6 +25,20 @@ body {
 	Helvetica, Arial, "Lucida Grande", sans-serif;
 	color: white;
 	background: #333;
+	header {
+		position:fixed;
+		height: 65px;
+		display:block;
+		width: 100%;
+		background: transparentize(#222, .2);
+		z-index:9;
+		text-align:left;
+		color: #f2f2f2;
+		padding: 15px 15px 15px 15px;
+		img {
+			width: 40px;
+		}
+	}
 	h1 {
 		font-weight: 700;
 		letter-spacing: -1px;

@@ -28,6 +28,11 @@ $.fn.isInViewport = function() {
 
 	// For css animations
 	$(window).on('resize scroll', function() {
+		if($('#section0').hasClass('active')) {
+	  		$('#section0 #header-intro')[0].play();
+		} else {
+			$('#section0 #header-intro')[0].pause();
+		}
 		$('.animate').each(function() {
 			if ($(this).isInViewport()) {
 				console.log("DH");
