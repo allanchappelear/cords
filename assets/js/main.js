@@ -1,24 +1,23 @@
 $( document ).ready(function() {
 	//First Slide Animations
 	setTimeout(function(){
-  		$('#section0 #header-intro').addClass('in');
-  		$('#section0 #header-intro')[0].play();
+		$('#section0 #header-intro').addClass('in');
+		$('#section0 #header-intro')[0].play();
 	}, 1000);
 	setTimeout(function(){
-  		$('#section0 p').addClass('in');
+		$('#section0 p').addClass('in');
 	}, 10000);
 
 	setTimeout(function(){
-  		$('#section0 h1').addClass('in');
+		$('#section0 h1').addClass('in');
 	}, 7000);
 
-	
-	
+
 	
 
 
 
-$('#header-intro').trigger('play');
+	$('#header-intro').trigger('play');
 // Check if items are in viewport
 $.fn.isInViewport = function() {
 	var elementTop = $(this).offset().top;
@@ -34,14 +33,14 @@ $.fn.isInViewport = function() {
 	$(window).on('resize scroll', function() {
 
 		$(function() {
-    $('body').on("mousewheel", function() {
-        console.log($(document).scrollTop());
-    });
-});
+			$('body').on("mousewheel", function() {
+				console.log($(document).scrollTop());
+			});
+		});
 
 
 		if($('#section0').hasClass('active')) {
-	  		$('#section0 #header-intro')[0].play();
+			$('#section0 #header-intro')[0].play();
 		} else {
 			$('#section0 #header-intro')[0].pause();
 		}
