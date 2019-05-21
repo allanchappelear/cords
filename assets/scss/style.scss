@@ -28,21 +28,31 @@ body {
 	h1 {
 		font-weight: 700;
 		letter-spacing: -1px;
-		font-size: 3.5em;
+		font-size: 3.2em;
 	}
 	h2 {
 		font-weight: 700;
-		font-size: 3em;
+		font-size: 2.5em;
 		letter-spacing: -2px;
 	}
 	h3 {
 		font-weight: 700;
 	}
 	.section-container {
-		width: 50vw;
+		width: 60vw;
+		min-height: 100vh;
 		background: #444;
-		height: 100vh;
-		padding: 5em;
+		padding: 5em 5em 5em 8em;
+		
+	}
+	#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    	background: white;
+	}
+	
+	.slimScrollBar {
+	  background: red !important;
+	  opacity: 1 !important;
+	  z-index: 999 !important;
 	}
 }
 
