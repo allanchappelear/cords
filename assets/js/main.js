@@ -3,12 +3,16 @@ $( document ).ready(function() {
 	setTimeout(function(){
   		$('#section0 #header-intro').addClass('in');
   		$('#section0 #header-intro')[0].play();
-	}, 2000);
+	}, 1);
 	setTimeout(function(){
   		$('#section0 p').addClass('in');
-	}, 1000);
+	}, 9000);
 
-	$('#section0 h1').addClass('in');
+	setTimeout(function(){
+  		$('#section0 h1').addClass('in');
+	}, 6000);
+
+	
 	
 	
 

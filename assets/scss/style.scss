@@ -58,14 +58,44 @@ body {
 		background-repeat: no-repeat;
 	}
 	.section-container {
-		width: 50vw;
+		width: 70vw;
 		min-height: 100vh;
 		background: #444;
-		padding: 5em 5em 5em 8em;
+		padding: 10em 5em 5em 8em;
 		
 	}
+	#fp-nav ul:after {
+	    position: absolute;
+	    content: '';
+	    height: 100%;
+	    background: #fff;
+	    width: 1px;
+	    left: 14px;
+	    top: 0;
+
+	}
+	#fp-nav {
+		top: 30vh;
+		li {
+			margin-bottom: 5em;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
 	#fp-nav ul li a span, .fp-slidesNav ul li a span {
     	background: white;
+    	height: 14px;
+	    width: 14px;
+  	    margin: -6px 0 0 -7px;
+
+	}
+	#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span {
+	    height: 24px;
+	    width: 24px;
+	    margin: -6px 0 0 -11px;
+	    border-radius: 100%;
 	}
 	.animate {
 		opacity: 0;
@@ -99,7 +129,7 @@ body {
 			background: none;
 			width: 75vw;
 			h1 {
-				margin-top: 20vh;
+				margin-top: 10vh;
 			}
 		}
 	}
@@ -107,6 +137,8 @@ body {
 		background-image: url(../../dist/images/sputnik.png);
 		.section-container {
 			background: transparentize($darkBlue, .1);
+			left: 10vw;
+			padding-right: 30vw;
 		}
 		.fp-tableCell {
 
