@@ -28,6 +28,14 @@ $.fn.isInViewport = function() {
 
 	// For css animations
 	$(window).on('resize scroll', function() {
+
+		$(function() {
+    $('body').on("mousewheel", function() {
+        console.log($(document).scrollTop());
+    });
+});
+
+
 		if($('#section0').hasClass('active')) {
 	  		$('#section0 #header-intro')[0].play();
 		} else {

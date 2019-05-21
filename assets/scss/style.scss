@@ -53,9 +53,7 @@ body {
 		font-weight: 700;
 	}
 	.section {
-		/* the important one*/
-		background-attachment: fixed; 
-		background-size: auto 80%;
+		background-size: cover;
 		background-position: 50% 0%;
 		background-repeat: no-repeat;
 	}
@@ -76,14 +74,10 @@ body {
 			opacity: 1;
 		}
 	}
-	#section1 {
 
-	}
-	
-	.slimScrollBar {
-	  background: red !important;
-	  opacity: 1 !important;
-	  z-index: 999 !important;
+	// For smoothing scroll
+	.fp-scroller {
+		transition: transform .8s ease-out !important;
 	}
 	.header {
 		video {
@@ -107,6 +101,35 @@ body {
 			h1 {
 				margin-top: 20vh;
 			}
+		}
+	}
+	#section1 {
+		background-image: url(../../dist/images/sputnik.png);
+		.section-container {
+			background: transparentize($darkBlue, .1);
+		}
+		.fp-tableCell {
+
+		}
+	}
+	#section2 {
+		background-image: url(../../dist/images/sat-damage.jpg);
+		.section-container {
+			background: transparentize(#222, .1);
+		}
+		.fp-tableCell {
+
+		}
+	}
+	#section3 {
+		background-image: url(../../dist/images/Creating-a-path-CORDS.jpg);
+		.section-container {
+			background: transparentize(#222, .1);
+		}
+		.fp-tableCell {
+	
+
+		
 		}
 	}
 }
