@@ -38,8 +38,15 @@ body {
 	h3 {
 		font-weight: 700;
 	}
+	.section {
+		/* the important one*/
+		background-attachment: fixed; 
+		background-size: auto 80%;
+		background-position: 50% 0%;
+		background-repeat: no-repeat;
+	}
 	.section-container {
-		width: 60vw;
+		width: 50vw;
 		min-height: 100vh;
 		background: #444;
 		padding: 5em 5em 5em 8em;
@@ -48,11 +55,45 @@ body {
 	#fp-nav ul li a span, .fp-slidesNav ul li a span {
     	background: white;
 	}
+	.animate {
+		opacity: 0;
+		transition: all 1s ease-in-out;
+		&.in {
+			opacity: 1;
+		}
+	}
+	#section1 {
+
+	}
 	
 	.slimScrollBar {
 	  background: red !important;
 	  opacity: 1 !important;
 	  z-index: 999 !important;
+	}
+	.header {
+		video {
+			position: fixed;
+			width: 100vw;
+			height: 100vh;
+			left: 0;
+			right: 0;
+			object-fit: cover;
+			z-index: 2
+		}
+		p.lead {
+			font-size: 1.5em;
+			margin-top: 1em;
+		}
+		.section-container {
+			z-index: 3;
+			position: relative;
+			background: none;
+			width: 75vw;
+			h1 {
+				margin-top: 20vh;
+			}
+		}
 	}
 }
 

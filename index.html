@@ -18,10 +18,14 @@
 <body>
 
   <div id="fullpage">
-    <section class="section active" id="section0">
+    <section class="section header active" id="section0">
+    
+       <video autoplay muted loop id="header-intro" class="animate">
+          <source src="./assets/video/space.mp4" type="video/mp4">
+          </video>
       <div class="section-container">
-        <h1>Space Debris &<br>Space Traffic Management</h1>
-        <p>Decades of space travel have resulted in a large amount of space debris that can be harmful to today’s satellites. Aerospace is addressing the issue of space debris and space traffic management by developing tools for analyzing potential collisions, studying reentry breakups, and modeling debris objects in space.</p>
+        <h1 class="animate">Space Debris &<br>Space Traffic Management</h1>
+        <p class="lead animate">Decades of space travel have resulted in a large amount of space debris that can be harmful to today’s satellites. Aerospace is addressing the issue of space debris and space traffic management by developing tools for analyzing potential collisions, studying reentry breakups, and modeling debris objects in space.</p>
       </div>
     </section>
 
@@ -81,6 +85,9 @@
 
 
 
+
+
+
   <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
         licenseKey: '55EF54C5-79804EFB-8D4587F8-748A27E9',
@@ -93,6 +100,7 @@
     });
 </script>
 
+ <script src="dist/js/main.js"></script>
 
 </body>
 </html>
