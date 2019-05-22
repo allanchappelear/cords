@@ -11,11 +11,11 @@ $( document ).ready(function() {
     // FULL PAGE
 	var myFullpage = new fullpage('#fullpage', {
       licenseKey: '55EF54C5-79804EFB-8D4587F8-748A27E9',
-      anchors: ['Intro','History','Problem','Solution'],
+      anchors: ['Intro','History','Problem','Solution', 'Rentry'],
         //sectionsColor: ['#333', '#1BBC9B', '#7E8F7C'],
         navigation: true,
         navigationPosition: 'left',
-        navigationTooltips: ['Intro', 'History', 'The Problem', 'The Solution'],
+        navigationTooltips: ['Intro', 'History', 'The Problem', 'The Solution', 'Rentry'],
         scrollOverflow: true,
         css3: true,
         onLeave: function(index, nextIndex, direction) {

@@ -208,7 +208,7 @@ body {
 		  }
 		}
 		.section-container {
-			background: transparentize(#222, .8);
+			background: transparentize($darkBlue, .3);
 			margin-left: 10vw;
 			padding-right: 30vw;
 			padding-bottom: 10em;
@@ -225,7 +225,27 @@ body {
 	#section3 {
 		background-image: url(../../dist/images/Creating-a-path-CORDS.jpg);
 		.section-container {
-			background: transparentize(#222, .1);
+			background: transparentize($darkBlue, .5);
+			margin-left: 10vw;
+			padding-right: 30vw;
+			padding-bottom: 10em;
+			z-index: 100;
+			position: relative;
+		}
+		.fp-tableCell {
+	
+
+		
+		}
+	}
+	#section4 {
+		.section-container {
+			background: transparentize($darkBlue, .5);
+			margin-left: 10vw;
+			padding-right: 30vw;
+			padding-bottom: 10em;
+			z-index: 100;
+			position: relative;
 		}
 		.fp-tableCell {
 	
