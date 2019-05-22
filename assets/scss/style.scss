@@ -427,6 +427,11 @@ body {
     float: left;
     position: relative;
     z-index: 1;
+    transition: transform .2s;
+
+}.main-timeline .timeline:hover {
+    transform: scale(1.5);
+   
 }
 .main-timeline .timeline:before,
 .main-timeline .timeline:after{

@@ -19,20 +19,12 @@ $( document ).ready(function() {
         scrollOverflow: true,
         css3: true,
         onLeave: function(index, nextIndex, direction) {
-        	$.fn.visible = function(partial) {
-    
-			      var $t            = $(this),
-			          $w            = $(window),
-			          viewTop       = $w.scrollTop(),
-			          viewBottom    = viewTop + $w.height(),
-			          _top          = $t.offset().top,
-			          _bottom       = _top + $t.height(),
-			          compareTop    = partial === true ? _bottom : _top,
-			          compareBottom = partial === true ? _top : _bottom;
-			    
-			    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-
-			  };
+        	console.log(index);
+        	if(index.anchor == "History") {
+  				$('#section0 #header-intro')[0].play();
+        	} else {
+        		$('#section0 #header-intro')[0].pause();
+        	}
         	if(index.index === 0 ) {
         		$isAnimatedSecond.addClass('animated fadeInUp'); 
 		        $isAnimatedSecond.eq(0).css('animation-delay', '.3s');
