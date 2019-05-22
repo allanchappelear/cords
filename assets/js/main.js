@@ -1,5 +1,58 @@
+// variables
+
 $( document ).ready(function() {
-	//First Slide Animations
+  	var $isAnimatedSecond = $('#section1 .is-animated');
+  	var $isAnimatedThird = $('#section2 .is-animated');
+  	var $debris = $('#section2 .debris');
+
+
+    
+
+    // FULL PAGE
+	var myFullpage = new fullpage('#fullpage', {
+      licenseKey: '55EF54C5-79804EFB-8D4587F8-748A27E9',
+      anchors: ['Intro','History','Problem','Solution'],
+        //sectionsColor: ['#333', '#1BBC9B', '#7E8F7C'],
+        navigation: true,
+        navigationPosition: 'left',
+        navigationTooltips: ['Intro', 'History', 'The Problem', 'The Solution'],
+        scrollOverflow: true,
+        css3: true,
+        onLeave: function(index, nextIndex, direction) {
+        	$.fn.visible = function(partial) {
+    
+			      var $t            = $(this),
+			          $w            = $(window),
+			          viewTop       = $w.scrollTop(),
+			          viewBottom    = viewTop + $w.height(),
+			          _top          = $t.offset().top,
+			          _bottom       = _top + $t.height(),
+			          compareTop    = partial === true ? _bottom : _top,
+			          compareBottom = partial === true ? _top : _bottom;
+			    
+			    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+			  };
+        	if(index.index === 0 ) {
+        		$isAnimatedSecond.addClass('animated fadeInUp'); 
+		        $isAnimatedSecond.eq(0).css('animation-delay', '.3s');
+		        $isAnimatedSecond.eq(1).css('animation-delay', '.6s');
+		        $isAnimatedSecond.eq(3).css('animation-delay', '.9s');
+   		        $isAnimatedSecond.eq(4).css('animation-delay', '1.2s');	
+
+        	} else if(index.index == 1) {
+		        $isAnimatedThird.addClass('animated fadeInUp').css('animation-delay', '.3s');
+		        $isAnimatedThird.eq(1).css('animation-delay', '1s');
+		        $isAnimatedThird.eq(2).css('animation-delay', '2s');
+		       	$debris.addClass('show').css('animation-delay', '1s');
+		       	$debris.eq(1).css('animation-delay', '3s');
+
+
+		      }
+        }
+     });
+	
+		//First Slide Animations
 	setTimeout(function(){
 		$('#section0 #header-intro').addClass('in');
 		$('#section0 #header-intro')[0].play();
@@ -11,47 +64,9 @@ $( document ).ready(function() {
 	setTimeout(function(){
 		$('#section0 h1').addClass('in');
 	}, 7000);
-
-
 	
-
-
-
 	$('#header-intro').trigger('play');
-// Check if items are in viewport
-$.fn.isInViewport = function() {
-	var elementTop = $(this).offset().top;
-	var elementBottom = elementTop + $(this).outerHeight();
+    // Second Slide Animations
 
-	var viewportTop = $(window).scrollTop();
-	var viewportBottom = viewportTop + $(window).height();
-
-	return elementBottom > viewportTop && elementTop < viewportBottom;
-};
-
-	// For css animations
-	$(window).on('resize scroll', function() {
-
-		$(function() {
-			$('body').on("mousewheel", function() {
-				console.log($(document).scrollTop());
-			});
-		});
-
-
-		if($('#section0').hasClass('active')) {
-			$('#section0 #header-intro')[0].play();
-		} else {
-			$('#section0 #header-intro')[0].pause();
-		}
-		$('.animate').each(function() {
-			if ($(this).isInViewport()) {
-				console.log("DH");
-				$(this).addClass('in');
-			} else {
-				//$(this).pause();
-			}
-		});
-	});
 
 });
