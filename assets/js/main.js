@@ -46,7 +46,10 @@ $( document ).ready(function() {
 		        $isAnimatedThird.eq(2).css('animation-delay', '2s');
 		       	$debris.addClass('show').css('animation-delay', '1s');
 		       	$debris.eq(1).css('animation-delay', '3s');
-
+		       	$debris.eq(2).css('animation-delay', '4s');
+		       	$debris.eq(3).css('animation-delay', '6s');
+		       	$debris.eq(4).css('animation-delay', '7s');
+		       	$debris.eq(5).css('animation-delay', '8s');
 
 		      }
         }

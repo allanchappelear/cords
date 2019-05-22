@@ -166,9 +166,37 @@ body {
 		}
 		.debris2 {
 			left: 30px;
-			top: -150vh;
+			top: -130vh;
 			&.show {
 				animation: move-debris 8s infinite;
+			}
+		}
+		.debris3 {
+			left: 75vw;
+			top: -100vh;
+			&.show {
+				animation: move-debris 6s infinite;
+			}
+		}
+		.debris4 {
+			left: 12vw;
+			top: -150vh;
+			&.show {
+				animation: move-debris 10s infinite;
+			}
+		}
+		.debris5 {
+			left: 25vw;
+			top: -200vh;
+			&.show {
+				animation: move-debris 15s infinite;
+			}
+		}
+		.debris6 {
+			left: 55vw;
+			top: -120vh;
+			&.show {
+				animation: move-debris 2s infinite;
 			}
 		}
 		@keyframes move-debris {
