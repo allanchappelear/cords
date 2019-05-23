@@ -563,7 +563,7 @@ blockquote {
 			width: 100%;
 			height: 100%;
 			content: '';
-			background: transparentize($darkBlue, .9);
+			background: transparentize(white, .9);
 			top: 10px;
 			left: 10px;
 			z-index: -5;
@@ -571,7 +571,18 @@ blockquote {
 		}
 	}	
 }
-
+.btn-inverse {
+	display: block;
+	border: 2px solid $darkBlue;
+	color: $darkBlue;
+	border-radius: 40px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: -1px;
+	i {
+		margin-right: 1em;
+	}
+}
 
 /*===== // Resonsive Vertical Timeline =====*/
 #conference-timeline {
