@@ -3,11 +3,11 @@
 $( document ).ready(function() {
   	var $isAnimatedSecond = $('#section1 .is-animated');
   	var $isAnimatedThird = $('#section2 .is-animated');
-  	var $isAnimated4 = $('#section4 .is-animated');
+  	var $isAnimated4 = $('#section3 .is-animated');
 
   	var $debris = $('#section2 .debris');
 
-  	
+
     
 
     // FULL PAGE
@@ -52,14 +52,11 @@ $( document ).ready(function() {
 		       	$debris.eq(3).css('animation-delay', '3s');
 		       	$debris.eq(4).css('animation-delay', '4s');
 		       	$debris.eq(5).css('animation-delay', '5s');
-		       	if( $('#section2 .fp-scroller').css('transform') == 'translate(0px, -529px) translateZ(0px);') {
-		       		console.log("TEST");
-		       		
-		       	}
-		       	
 
-		      } else if(index.index == 3) {
+		      } else if(index.index == 2) {
 		        $isAnimated4.addClass('animated fadeInUp').css('animation-delay', '.3s');
+		        $isAnimated4.eq(0).css('animation-delay', '.6s');
+
 		      }
         }
      });

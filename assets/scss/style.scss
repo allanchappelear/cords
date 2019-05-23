@@ -669,6 +669,11 @@ blockquote {
     overflow: hidden;
     position: relative;
     transition: all .5s ease-in-out;
+    &::nth-child(even) {
+ 	    a {
+ 	    	background-color: transparentize(#fff, .6);
+ 	    }
+    }
     &:hover {
 		background-color: #fff;
     }
@@ -726,7 +731,7 @@ blockquote {
     margin: 0 0 0 5px;
     padding: 0 0 0 40px;
     float: right;
-    background: transparentize(white, .9);
+    //background: transparentize(white, .1);
 }
 .main-timeline .timeline:nth-child(even):before{
     right: auto;
