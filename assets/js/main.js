@@ -3,9 +3,11 @@
 $( document ).ready(function() {
   	var $isAnimatedSecond = $('#section1 .is-animated');
   	var $isAnimatedThird = $('#section2 .is-animated');
+  	var $isAnimated4 = $('#section4 .is-animated');
+
   	var $debris = $('#section2 .debris');
 
-
+  	
     
 
     // FULL PAGE
@@ -18,6 +20,14 @@ $( document ).ready(function() {
         navigationTooltips: ['Intro', 'History', 'The Problem', 'The Solution', 'Rentry'],
         scrollOverflow: true,
         css3: true,
+      	showActiveTooltip: true,
+  		scrollBar: false,
+  		//autoScrolling: true,
+		//normalScrollElements: '#section0, #section1, #section2, #section3, #section4',
+		//scrollOverflow: false,
+		fadingEffect: true,
+		//normalScrollElements: '#section0, #section1',
+
         onLeave: function(index, nextIndex, direction) {
         	console.log(index);
         	if(index.anchor == "History") {
@@ -36,13 +46,20 @@ $( document ).ready(function() {
 		        $isAnimatedThird.addClass('animated fadeInUp').css('animation-delay', '.3s');
 		        $isAnimatedThird.eq(1).css('animation-delay', '1s');
 		        $isAnimatedThird.eq(2).css('animation-delay', '2s');
-		       	$debris.addClass('show').css('animation-delay', '1s');
-		       	$debris.eq(1).css('animation-delay', '3s');
-		       	$debris.eq(2).css('animation-delay', '4s');
-		       	$debris.eq(3).css('animation-delay', '6s');
-		       	$debris.eq(4).css('animation-delay', '7s');
-		       	$debris.eq(5).css('animation-delay', '8s');
+		       	$debris.addClass('show').css('animation-delay', '.5s');
+		       	$debris.eq(1).css('animation-delay', '1s');
+		       	$debris.eq(2).css('animation-delay', '2s');
+		       	$debris.eq(3).css('animation-delay', '3s');
+		       	$debris.eq(4).css('animation-delay', '4s');
+		       	$debris.eq(5).css('animation-delay', '5s');
+		       	if( $('#section2 .fp-scroller').css('transform') == 'translate(0px, -529px) translateZ(0px);') {
+		       		console.log("TEST");
+		       		
+		       	}
+		       	
 
+		      } else if(index.index == 3) {
+		        $isAnimated4.addClass('animated fadeInUp').css('animation-delay', '.3s');
 		      }
         }
      });
@@ -63,44 +80,44 @@ $( document ).ready(function() {
 	$('#header-intro').trigger('play');
     // Second Slide Animations
 
-    var ctx = document.getElementById('myChart').getContext('2d');
-	var myChart = new Chart(ctx, {
-	    type: 'line',
-	    data: {
-	        labels: ['1960', '1970', '1980', '1990', '2000', '2010'],
-	        datasets: [{
-	            label: '# Space Objects',
-	            data: [0, 100, 250, 500, 1200, 2000],
-	            backgroundColor: [
-	                'rgba(255, 99, 132, 0.2)',
-	                'rgba(54, 162, 235, 0.2)',
-	                'rgba(255, 206, 86, 0.2)',
-	                'rgba(75, 192, 192, 0.2)',
-	                'rgba(153, 102, 255, 0.2)',
-	                'rgba(255, 159, 64, 0.2)'
-	            ],
-	            borderColor: [
-	                'rgba(255, 99, 132, 1)',
-	                'rgba(54, 162, 235, 1)',
-	                'rgba(255, 206, 86, 1)',
-	                'rgba(75, 192, 192, 1)',
-	                'rgba(153, 102, 255, 1)',
-	                'rgba(255, 159, 64, 1)'
-	            ],
-	            borderWidth: 1
-	        }]
-	    },
-	    options: {
-	        scales: {
-	            yAxes: [{
-	                ticks: {
-	                    beginAtZero: true
-	                }
-	            }]
-	        }
-	    }
-	});
-
+    
+var ctx = document.getElementById('myChart').getContext('2d');
+					var myChart = new Chart(ctx, {
+				    type: 'line',
+				    data: {
+				        labels: ['1960', '1970', '1980', '1990', '2000', '2010'],
+				        datasets: [{
+				            label: '# Space Objects',
+				            data: [0, 100, 250, 500, 1200, 2000],
+				            backgroundColor: [
+				                'rgba(255, 99, 132, 0.2)',
+				                'rgba(54, 162, 235, 0.2)',
+				                'rgba(255, 206, 86, 0.2)',
+				                'rgba(75, 192, 192, 0.2)',
+				                'rgba(153, 102, 255, 0.2)',
+				                'rgba(255, 159, 64, 0.2)'
+				            ],
+				            borderColor: [
+				                'rgba(255, 99, 132, 1)',
+				                'rgba(54, 162, 235, 1)',
+				                'rgba(255, 206, 86, 1)',
+				                'rgba(75, 192, 192, 1)',
+				                'rgba(153, 102, 255, 1)',
+				                'rgba(255, 159, 64, 1)'
+				            ],
+				            borderWidth: 1
+				        }]
+				    },
+				    options: {
+				        scales: {
+				            yAxes: [{
+				                ticks: {
+				                    beginAtZero: true
+				                }
+				            }]
+				        }
+				    }
+				});
 
 	var byCountryx = document.getElementById('byCountry').getContext('2d');
 	var byCountry = new Chart(byCountryx, {
