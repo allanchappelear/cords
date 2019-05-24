@@ -241,7 +241,7 @@ body {
 		padding-top: 100vh;
 
 		.section-container {
-			padding-right: 350px;
+			padding-right: 400px;
 			padding-top: 5em;
 		}
 		.fp-tableCell {
@@ -670,7 +670,7 @@ blockquote {
     position: absolute;
     top: 100vh;
     right: 4vw;
-    width: 45vw;
+    width: 38vw;
     padding-top: 7em;
     height: 184vh;
     z-index: 5;
@@ -699,6 +699,7 @@ blockquote {
     padding: 0 40px 0 0;
     margin: 0 5px 2em 0;
     float: left;
+    clear: both;
     position: relative;
     z-index: 1;
     transition: transform .2s;
@@ -807,6 +808,10 @@ blockquote {
 }
 .main-timeline .timeline:nth-child(even) .timeline-content{ 
 	padding: 15px 20px 15px 73px; 
+	background: transparentize(white, .2);
+	&:hover {
+		background: white;
+	}
 }
 .main-timeline .timeline:nth-child(even) .timeline-content:before{
     right: auto;
