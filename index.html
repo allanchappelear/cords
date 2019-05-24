@@ -20,186 +20,204 @@
 
 </head>
 <body>
-  <header><img src="dist/images/logo.svg"></header>
-  <div id="fullpage">
-    <!--<div class="header-wrapper">-->
-      <!-- Main Intro Header -->
-      <section class="section header active" id="section0">
-       <video autoplay muted loop id="header-intro" class="animate">
-        <source src="./assets/video/space.mp4" type="video/mp4">
-        </video>
-        <div class="section-container">
-          <h1 class="animate">Decades of space travel have resulted in a large amount of space debris that can be harmful to today’s satellites. </h1>
-          <p class="lead animate">Aerospace is addressing the issue of space debris and space traffic management by developing tools for analyzing potential collisions, studying reentry breakups, and modeling debris objects in space.</p>
-        </div>
+  <div id="loader">
+    <div class="load-wrapper">
+      <?xml version="1.0" encoding="utf-8"?>
+      <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="0 0 42.4 40.1" style="enable-background:new 0 0 42.4 40.1;" xml:space="preserve">
+      <style type="text/css">
+      .st0{fill:#FFFFFF;}
+    </style>
+    <g id="aerospace-icon-intro">
+      <path id="Shape" class="st0" d="M19.5,38c-9.3,0-16.9-7.6-16.9-16.9c0-9.3,7.6-16.9,16.9-16.9c2.5,0,4.8,0.5,7,1.5L5,27.3h7.2
+      l5.2-5.2l8.9-8.9v8.9h-8.6v5.2h13.8V9.4c3.1,3.1,4.8,7.4,4.8,11.8C36.3,30.5,28.8,38,19.5,38 M31.5,6.5V0.7L28,4.2
+      c-2.7-1.3-5.6-2-8.6-2c-10.5,0-19,8.5-19,19s8.5,19,19,19s19-8.5,19-19C38.5,15.3,35.8,10,31.5,6.5"/>
+    </g>
+  </svg>
+  <div id="intro-circle-animation"></div>
+</div>
+</div>
 
-      </section>
-      <!--</div>-->
-
-
-      <!-- Main Intro Header -->
-      <section class="section" id="section1">
-       <div class="stars"></div>
-       <div class="twinkling"></div>
-       <div class="section-container">
-        <h2>History</h2>
-        <p>The launch of Sputnik on Oct. 4, 1957</large>, marked the beginning of an intense space race that led to decades of rocket and satellite launches, which eventually resulted in a large amount of space debris. Space debris is anything in orbit that is man-made and is no longer in use. It consists of old, inactive satellites; rocket stages; and other discarded hardware.  Smaller pieces of space debris include fragments of vehicles that exploded or collided and bits of insulation and paint that have come off of space vehicles. Generally, the smaller the debris, the more there is of it. This abundance of debris created the need for a military space surveillance to maintain a catalog of all Earth-orbiting objects — active payloads, satellites and debris — along with detailed information about trajectory and point of origin.</p>
-        <div class="footnote">
-          <a href="https://www.afspc.af.mil/News/Article-Display/Article/1579285/combined-space-operations-center-established-at-vandenberg-afb/" target="_blank">
-            <img src="dist/images/logo.svg">
-            <div class="caption">
-              <p>Air Force Space Command article "Combined Space Operations Center established at Vandenberg AFB" published July 19, 2018 (Read the article)</p>
-            </div>
-          </a>
-        </div>
-        <p>This “space object catalog” or Satellite Catalog (SATCAT) is maintained by  Joint Combined Space Operations Center (CSpOC) at Vandenberg Air Force Base, part of U.S. Strategic Command. One of the missions of CSpOC is to detect, track and identify all objects in Earth orbit in addition to monitoring the International Space Station (ISS) and other NASA satellites for collisions. Also located at Vandenberg Air Force Base is the The U.S. Air Force’s 18th Space Control Squadron, which operates the Space Surveillance Network (SSN), which oversees radar and optical sensors at various sites around the world. These sensors observe and track objects that are larger than a softball in low Earth orbit (LEO) and basketball-sized objects or larger, in higher, geosynchronous orbits. The sensors can determine which orbit the objects are in, and that information is used to predict close approaches, reentries and the probability of a collision.  </p>
-        <p>As a world leader in space debris research, The Aerospace Corporation (Aerospace) has supported the Space Surveillance Network for nearly 60 years. Aerospace helps the U.S. government estimate the amount of debris created in a collision or explosion, assists with reentry predictions and reentry casualty expectation and is renowned in space traffic management research. </p>
+<header><img src="dist/images/logo.svg"></header>
+<div id="fullpage">
+  <!--<div class="header-wrapper">-->
+    <!-- Main Intro Header -->
+    <section class="section header active" id="section0">
+     <video autoplay muted loop id="header-intro" class="animate">
+      <source src="./assets/video/space.mp4" type="video/mp4">
+      </video>
+      <div class="section-container">
+        <h1 class="animate" id="debris">Debris.</h1>
+        <h1 class="animate" id="heading">Decades of space travel have resulted in a large amount of space debris that can be harmful to today’s satellites. </h1>
+        <p class="lead animate">Aerospace is addressing the issue of space debris and space traffic management by developing tools for analyzing potential collisions, studying reentry breakups, and modeling debris objects in space.</p>
       </div>
 
-      <section id="conference-timeline">
-        <div class="main-timeline">
-          <div class="timeline is-animated">
-            <a href="https://www.youtube.com/watch?v=qvPzUAeWZZY" class="timeline-content" data-lity>
-              <div class="timeline-icon">
-                <img src="dist/images/icons/sputnik.svg" width="52px">
-              </div>
-              <h3>1957</h3>
-              <p class="description">The first artificial satellite - Sputnik - launches.</p>
-            </a>
-          </div>
-          <div class="timeline is-animated">
-            <a href="https://www.nasa.gov/exploration/whyweexplore/Why_We_29.html" class="timeline-content">
-              <div class="timeline-icon">
-                <img src="dist/images/icons/nasa.svg" width="45">
-              </div>
-              <h3>1958</h3>
-              <p class="description">NASA is founded as an independent agency of the United States Federal Government.</p>
-            </a>
-          </div>
-          <div class="timeline is-animated">
-            <a href="dist/images/Explorer-6.jpg" class="timeline-content" data-lity>
-              <div class="timeline-icon">
-                <img src="dist/images/icons/earth.svg" width="45">
-              </div>
-              <h3>1959</h3>
-              <p class="description">First photograph of Earth taken from Orbit (Explore Photos from Orbit </p>
-            </a>
-          </div>
-          <div class="timeline is-animated">
-            <a href="https://www.youtube.com/watch?v=vpKVjwKMs-A" class="timeline-content" data-lity>
-              <div class="timeline-icon">
-                <img src="dist/images/logo-gray.svg" width="45">
-              </div>
-              <h3>1960</h3>
-              <p class="description">Aerospace Corp established as a CA nonprofit organization (History of Aerospace Corp</p>
-            </a>
-          </div>
-          <div class="timeline is-animated">
-            <a href="https://www.youtube.com/watch?v=RMINSD7MmT4" class="timeline-content" data-lity>
-              <div class="timeline-icon">
-                <img src="dist/images/icons/helmet.svg" width="45">
-              </div>
-              <h3>1969</h3>
-              <p class="description">"One giant leap for mankind" Neil Armstrong takes first steps on the moon</p>
-            </a>
-          </div>
-          <div class="timeline is-animated">
-            <a href="https://www.space.com/16773-first-space-station-salyut-1.html" class="timeline-content" data-lity>
-              <div class="timeline-icon">
-                <img src="dist/images/icons/space-station.svg" width="45">
-              </div>
-              <h3>1971</h3>
-              <p class="description">First Space Station launched by the Soviet Union </p>
-            </a>
-          </div>
-          <div class="timeline is-animated">
-            <a href="https://www.npr.org/2011/09/21/140641362/where-falling-satellite-lands-is-anyones-guess" class="timeline-content" data-lity>
-              <div class="timeline-icon">
-                <img src="dist/images/icons/debris.svg" width="45">
-              </div>
-              <h3>1997</h3>
-              <p class="description">Lottie Williams becomes first person ever hit with falling space debris. She is not hurt.</p>
-            </a>
-          </div>
-          <div class="timeline is-animated">
-            <a href="#" class="timeline-content">
-              <div class="timeline-icon">
-                <img src="dist/images/logo-gray.svg" width="45">
-              </div>
-              <h3>1997</h3>
-              <p class="description">Aerospace launches Center for Orbital and Reentry Debris Studies, CORDS </p>
-            </a>
-          </div>
-          <div class="timeline is-animated">
-            <a href="#" class="timeline-content">
-              <div class="timeline-icon">
-                <img src="dist/images/logo-gray.svg" width="45">
-              </div>
-              <h3>2018</h3>
-              <p class="description">American aerospace company Rocket Lab successfully launched its Electron rocket from Mahia Launch Center into low earth orbit. This is the first time that a rocket entered orbit after launching from a privately owned and operated spaceport.</p>
-            </a>
-          </div>
+    </section>
+    <!--</div>-->
+     <div class="stars"></div>
+     <div class="twinkling"></div>
 
+    <!-- Main Intro Header -->
+    <section class="section" id="section1">
+
+     <div class="section-container">
+      <h2>History</h2>
+      <p>The launch of Sputnik on Oct. 4, 1957</large>, marked the beginning of an intense space race that led to decades of rocket and satellite launches, which eventually resulted in a large amount of space debris. Space debris is anything in orbit that is man-made and is no longer in use. It consists of old, inactive satellites; rocket stages; and other discarded hardware.  Smaller pieces of space debris include fragments of vehicles that exploded or collided and bits of insulation and paint that have come off of space vehicles. Generally, the smaller the debris, the more there is of it. This abundance of debris created the need for a military space surveillance to maintain a catalog of all Earth-orbiting objects — active payloads, satellites and debris — along with detailed information about trajectory and point of origin.</p>
+      <div class="footnote">
+        <a href="https://www.afspc.af.mil/News/Article-Display/Article/1579285/combined-space-operations-center-established-at-vandenberg-afb/" target="_blank">
+          <img src="dist/images/logo.svg">
+          <div class="caption">
+            <p>Air Force Space Command article "Combined Space Operations Center established at Vandenberg AFB" published July 19, 2018 (Read the article)</p>
+          </div>
+        </a>
+      </div>
+      <p>This “space object catalog” or Satellite Catalog (SATCAT) is maintained by  Joint Combined Space Operations Center (CSpOC) at Vandenberg Air Force Base, part of U.S. Strategic Command. One of the missions of CSpOC is to detect, track and identify all objects in Earth orbit in addition to monitoring the International Space Station (ISS) and other NASA satellites for collisions. Also located at Vandenberg Air Force Base is the The U.S. Air Force’s 18th Space Control Squadron, which operates the Space Surveillance Network (SSN), which oversees radar and optical sensors at various sites around the world. These sensors observe and track objects that are larger than a softball in low Earth orbit (LEO) and basketball-sized objects or larger, in higher, geosynchronous orbits. The sensors can determine which orbit the objects are in, and that information is used to predict close approaches, reentries and the probability of a collision.  </p>
+      <p>As a world leader in space debris research, The Aerospace Corporation (Aerospace) has supported the Space Surveillance Network for nearly 60 years. Aerospace helps the U.S. government estimate the amount of debris created in a collision or explosion, assists with reentry predictions and reentry casualty expectation and is renowned in space traffic management research. </p>
+    </div>
+
+    <section id="conference-timeline">
+      <div class="main-timeline">
+        <div class="timeline is-animated">
+          <a href="https://www.youtube.com/watch?v=qvPzUAeWZZY" class="timeline-content" data-lity>
+            <div class="timeline-icon">
+              <img src="dist/images/icons/sputnik.svg" width="52px">
+            </div>
+            <h3>1957</h3>
+            <p class="description">The first artificial satellite - Sputnik - launches.</p>
+          </a>
+        </div>
+        <div class="timeline is-animated">
+          <a href="https://www.nasa.gov/exploration/whyweexplore/Why_We_29.html" class="timeline-content">
+            <div class="timeline-icon">
+              <img src="dist/images/icons/nasa.svg" width="45">
+            </div>
+            <h3>1958</h3>
+            <p class="description">NASA is founded as an independent agency of the United States Federal Government.</p>
+          </a>
+        </div>
+        <div class="timeline is-animated">
+          <a href="dist/images/Explorer-6.jpg" class="timeline-content" data-lity>
+            <div class="timeline-icon">
+              <img src="dist/images/icons/earth.svg" width="45">
+            </div>
+            <h3>1959</h3>
+            <p class="description">First photograph of Earth taken from Orbit (Explore Photos from Orbit </p>
+          </a>
+        </div>
+        <div class="timeline is-animated">
+          <a href="https://www.youtube.com/watch?v=vpKVjwKMs-A" class="timeline-content" data-lity>
+            <div class="timeline-icon">
+              <img src="dist/images/logo-gray.svg" width="45">
+            </div>
+            <h3>1960</h3>
+            <p class="description">Aerospace Corp established as a CA nonprofit organization (History of Aerospace Corp</p>
+          </a>
+        </div>
+        <div class="timeline is-animated">
+          <a href="https://www.youtube.com/watch?v=RMINSD7MmT4" class="timeline-content" data-lity>
+            <div class="timeline-icon">
+              <img src="dist/images/icons/helmet.svg" width="45">
+            </div>
+            <h3>1969</h3>
+            <p class="description">"One giant leap for mankind" Neil Armstrong takes first steps on the moon</p>
+          </a>
+        </div>
+        <div class="timeline is-animated">
+          <a href="https://www.space.com/16773-first-space-station-salyut-1.html" class="timeline-content" data-lity>
+            <div class="timeline-icon">
+              <img src="dist/images/icons/space-station.svg" width="45">
+            </div>
+            <h3>1971</h3>
+            <p class="description">First Space Station launched by the Soviet Union </p>
+          </a>
+        </div>
+        <div class="timeline is-animated">
+          <a href="https://www.npr.org/2011/09/21/140641362/where-falling-satellite-lands-is-anyones-guess" class="timeline-content" data-lity>
+            <div class="timeline-icon">
+              <img src="dist/images/icons/debris.svg" width="45">
+            </div>
+            <h3>1997</h3>
+            <p class="description">Lottie Williams becomes first person ever hit with falling space debris. She is not hurt.</p>
+          </a>
+        </div>
+        <div class="timeline is-animated">
+          <a href="#" class="timeline-content">
+            <div class="timeline-icon">
+              <img src="dist/images/logo-gray.svg" width="45">
+            </div>
+            <h3>1997</h3>
+            <p class="description">Aerospace launches Center for Orbital and Reentry Debris Studies, CORDS </p>
+          </a>
+        </div>
+        <div class="timeline is-animated">
+          <a href="#" class="timeline-content">
+            <div class="timeline-icon">
+              <img src="dist/images/logo-gray.svg" width="45">
+            </div>
+            <h3>2018</h3>
+            <p class="description">American aerospace company Rocket Lab successfully launched its Electron rocket from Mahia Launch Center into low earth orbit. This is the first time that a rocket entered orbit after launching from a privately owned and operated spaceport.</p>
+          </a>
         </div>
 
-      </section>
+      </div>
+
+    </section>
+  </section>
+
+  <section class="section" id="section2">
+
+    <img src="dist/images/junk1.png" class="debris debris1">
+    <img src="dist/images/junk2.png" class="debris debris2">
+    <img src="dist/images/junk3.png" class="debris debris3">
+    <img src="dist/images/junk4.png" class="debris debris4">
+    <img src="dist/images/junk5.png" class="debris debris5">
+    <img src="dist/images/junk6.png" class="debris debris6">
+
+
+    <div class="section-container">
+     <div class="popout image debris-damage is-animated" id="pq1">
+      <div class="caption is-animated"><h2>The Problem<br>of Space Debris</h2>
+        <p>Up close view of damage caused to the Hubble Space Telescope</p></div>
+      </div>
+
+      <div class="popout is-animated" id="journey-to-earth">
+        <a href="assets/a-journey-to-earth.mp4"  data-lity>
+          <img src="dist/images/debris-thumb.png" width="100%">
+          <span class="btn btn-inverse"><img src="dist/images/logo-gray.svg" class="logo-icon">A Space Debris Journey</span></a>
+        </div>
+
+        <p >Space debris affects everyone especially since almost everything we do in our modern way of life uses satellite technology. Space debris adds to the cost of operating satellites because if debris destroys a satellite, it may take years and hundreds of millions of dollars to restore that satellite's service. Even tiny debris objects can inflict grave harm to critical sensors and spacecraft components. A one-centimeter-sized object is considered lethal if it hits a satellite and an object down to one millimeter can critically damage a satellite if it hits a critical component.  In addition, the growth in space debris will make orbit operations and space flight more hazardous, difficult and more costly if frequent maneuvers are required to avoid debris. A satellite would have to carry extra fuel for these extra maneuvers and would likely need to shield critical areas from collisions with small debris.</p>
+
+        <div id="chart" class="chart">
+          <h3>Space Objects Since 1960's</h3>
+          <canvas id="myChart"></canvas>
+        </div>
+        <p class="wrap">The U.S. military is currently tracking about 20,000 objects and has cataloged more than 40,000 objects over the years. Space debris numbers are estimated to rise to over 100,000 objects in the coming years. Most space debris objects are too small to be tracked but large enough to damage spacecraft. It is estimated that there are hundreds of thousands of objects that could be fatal or catastrophic to a space mission and millions of objects that are capable of causing damage.</p>
+
+        <p> Unfortunately, we can’t just vacuum or sweep up space debris into a space garbage truck. To remove space debris, particularly the large and more dangerous objects, we have to get close to it and maintain the same speed as each object. We then must somehow attach to it, and move it into a lower orbit or reenter it directly into the atmosphere, where it will burn up upon reentry. If the object is a rocket stage with propellant still on board, there is an explosion risk, which is why astronauts never perform this task.</p>
+        <div id="chart2" class="chart">
+          <h3>Space Objects By Country</h3>
+          <canvas id="byCountry"></canvas>
+        </div>
+
+        <p class="wrap">There is also the issue of property rights; you can’t grab a satellite or rocket that belongs to another country without their permission. There is no easy way to control the small-but-dangerous objects that are not well tracked or not tracked at all. They have more kinetic energy than bullets, and they are moving ten times faster. It is hard to catch a bullet, especially if you don’t want to create more junk while doing it.</p>
+
+        <p>Increased space debris traffic also equals increased collision risk for launch vehicles and satellites on orbit. If the SSN predicts a collision between a cataloged object and a known operational satellite, they usually attempt to notify the owner/operator. Debris can’t be moved, but if the other object is a maneuverable satellite, the object may be able to move out of the way in time to avoid a collision. Most satellite operators require hours or days to plan and execute a collision avoidance maneuver. Other nations use CSpOC data as well as their own tracking data to protect their satellites. Therefore, high-accuracy assessment and prediction tools are essential for reducing risk to current systems and future launches.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
     </section>
 
-    <section class="section" id="section2">
-      <div class="stars"></div>
-      <div class="twinkling"></div>
-      <img src="dist/images/junk1.png" class="debris debris1">
-      <img src="dist/images/junk2.png" class="debris debris2">
-      <img src="dist/images/junk3.png" class="debris debris3">
-      <img src="dist/images/junk4.png" class="debris debris4">
-      <img src="dist/images/junk5.png" class="debris debris5">
-      <img src="dist/images/junk6.png" class="debris debris6">
 
+    <section class="section" id="section3">
 
       <div class="section-container">
-         <div class="popout image debris-damage is-animated" id="pq1">
-            <div class="caption is-animated"><h2>The Problem of Space Debris</h2>
-              <p>Up close view of damage caused to the Hubble Space Telescope</p></div>
-          </div>
-        
-        <div class="popout is-animated" id="journey-to-earth">
-          <a href="assets/a-journey-to-earth.mp4"  data-lity>
-            <img src="dist/images/debris-thumb.png" width="100%">
-            <span class="btn btn-inverse"><img src="dist/images/logo-gray.svg" class="logo-icon">A Space Debris Journey</span></a>
+        <div class="popout image cords is-animated" id="pq2">
+          <div class="caption is-animated"><h2>CORDS Leads Space Traffic Management</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor arcu et ex varius, vel euismod leo luctus.</p></div>
           </div>
 
-          <p >Space debris affects everyone especially since almost everything we do in our modern way of life uses satellite technology. Space debris adds to the cost of operating satellites because if debris destroys a satellite, it may take years and hundreds of millions of dollars to restore that satellite's service. Even tiny debris objects can inflict grave harm to critical sensors and spacecraft components. A one-centimeter-sized object is considered lethal if it hits a satellite and an object down to one millimeter can critically damage a satellite if it hits a critical component.  In addition, the growth in space debris will make orbit operations and space flight more hazardous, difficult and more costly if frequent maneuvers are required to avoid debris. A satellite would have to carry extra fuel for these extra maneuvers and would likely need to shield critical areas from collisions with small debris.</p>
-         
-          <div id="chart" class="chart">
-            <h3>Space Objects Since 1960's</h3>
-            <canvas id="myChart"></canvas>
-          </div>
-          <p class="wrap">The U.S. military is currently tracking about 20,000 objects and has cataloged more than 40,000 objects over the years. Space debris numbers are estimated to rise to over 100,000 objects in the coming years. Most space debris objects are too small to be tracked but large enough to damage spacecraft. It is estimated that there are hundreds of thousands of objects that could be fatal or catastrophic to a space mission and millions of objects that are capable of causing damage.</p>
-
-          <p> Unfortunately, we can’t just vacuum or sweep up space debris into a space garbage truck. To remove space debris, particularly the large and more dangerous objects, we have to get close to it and maintain the same speed as each object. We then must somehow attach to it, and move it into a lower orbit or reenter it directly into the atmosphere, where it will burn up upon reentry. If the object is a rocket stage with propellant still on board, there is an explosion risk, which is why astronauts never perform this task.</p>
-          <div id="chart2" class="chart">
-            <h3>Space Objects By Country</h3>
-            <canvas id="byCountry"></canvas>
-          </div>
-
-          <p class="wrap">There is also the issue of property rights; you can’t grab a satellite or rocket that belongs to another country without their permission. There is no easy way to control the small-but-dangerous objects that are not well tracked or not tracked at all. They have more kinetic energy than bullets, and they are moving ten times faster. It is hard to catch a bullet, especially if you don’t want to create more junk while doing it.</p>
-
-          <p>Increased space debris traffic also equals increased collision risk for launch vehicles and satellites on orbit. If the SSN predicts a collision between a cataloged object and a known operational satellite, they usually attempt to notify the owner/operator. Debris can’t be moved, but if the other object is a maneuverable satellite, the object may be able to move out of the way in time to avoid a collision. Most satellite operators require hours or days to plan and execute a collision avoidance maneuver. Other nations use CSpOC data as well as their own tracking data to protect their satellites. Therefore, high-accuracy assessment and prediction tools are essential for reducing risk to current systems and future launches.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-      </section>
-
-
-      <section class="section" id="section3">
-        <div class="stars"></div>
-        <div class="twinkling"></div>
-        <div class="section-container">
-            <div class="popout image cords is-animated" id="pq2">
-            <div class="caption is-animated"><h2>CORDS Leads Space Traffic Management</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor arcu et ex varius, vel euismod leo luctus.</p></div>
-          </div>
-        
           <p>Aerospace’s Center for Orbital and Reentry Debris Studies(CORDS) is addressing the issue of space debris and space traffic management by developing tools and techniques that will analyze potential collision scenarios, study reentry breakups of upper stages and spacecraft and model debris objects in space. These efforts are critical given the predicted population growth in launch efforts and LEO satellite constellations.</p>
           <div class="footnote">
 
@@ -230,8 +248,7 @@
 
 
       <section class="section" id="section4">
-        <div class="stars"></div>
-        <div class="twinkling"></div>
+
         <div class="section-container">
           <video autoplay muted loop id="re-entry" class="is-animated">
             <source src="./assets/video/re-entry.mp4" type="video/mp4">
@@ -244,9 +261,7 @@
             <br><br><br><br><br><br><br><br>
             <h3>Tracking Known Space Objects &amp; Debris</h3>
             <br><br>
-            <Iframe src="http://stuffin.space/" id="spaceObjects">
 
-            </Iframe>
             <h3>Preventing harm to life and property on Earth </h3>
             <p>For those old enough to remember, the 1979 reentry of the U.S. space station Skylab was rife with worldwide fanfare and some hysteria—it seemed everyone had some sort of “plan” to avoid the impending debris hit. But thanks to NASA controllers who fine-tuned the space station’s attitude (orientation) during its final orbits, Skylab reentered in an orbit that passed over as few populated areas as possible. Its debris eventually reentered on the southern Australian coast, and no one was hit.</p>
             <blockquote class="right"">
@@ -282,9 +297,11 @@
       <script src="https://d3js.org/d3.v5.min.js"></script>
 
 
-      <script type="text/javascript">
 
-      </script>
+
+
+      
+      
       <script src="dist/js/main.js"></script>
 
 
