@@ -1,6 +1,35 @@
 // variables
-$('body').css('overflow', 'hidden');
+//$('body').css('overflow', 'hidden');
 
+
+//Build Characters for Intro Animation
+
+function setUpCharacters() {
+  var $sentences = $('.intro-debris');
+
+  // Run for each sentence
+  $sentences.each(function() {
+    var $sentence = $(this);
+    var newContent = '';
+
+    // Go through all characters of the sentence
+    for (i = 0; i < $sentence.text().length; i++) {
+      var substring = $sentence.text().substr(i, 1);
+
+      // If we have a character, wrap it
+      if (substring != " ") {
+        newContent += '<span>' + substring + '</span>';
+      } else {
+        newContent += substring;
+      } 
+    }
+
+    // Replace content
+    $sentence.html(newContent); 
+  });
+}
+
+setUpCharacters();
 
 //Check Viewport
 $.fn.visible = function(partial) {
@@ -20,12 +49,16 @@ $.fn.visible = function(partial) {
 
 
 $(window).on('load', function() {
+
 	setTimeout(function(){
 		$('#loader').fadeOut('slow');
 	}, 1000);
 	$('#section0 #header-intro').addClass('in');
 	$('#section0 #header-intro')[0].play();
-
+	setTimeout(function(){
+		$('#fp-nav').addClass('in');
+	}, 3000);
+	
 	
 });
 
@@ -41,9 +74,18 @@ $(window).on('scroll', function(e) {
                 
             }
 	$(".is-animated").each(function(i, el) {
+		
 		var el = $(el);
 		if (el.visible(true)) {
-			el.addClass("animated fadeInUp"); 
+			setTimeout(function(){
+				el.addClass("animated fadeInUp"); 
+			}, 500);
+		}
+	});
+	$(".rebr-section").each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+			el.addClass("explode"); 
 		}
 	});
 	var inView = false;
