@@ -621,11 +621,11 @@ body {
 }
 
 #chart2 {
-			background: white;
-			padding: 3em;
-			width: 40vw;
-			height: auto;
-		}
+	background: white;
+	padding: 3em;
+	width: 40vw;
+	height: auto;
+}
 
 /* Stars 
 ------------------------------------- */
@@ -704,7 +704,7 @@ body {
 			background-size: cover;
 			.caption {
 				bottom: auto;
-				top: 5%;
+				top: 10%;
 			}
 
 		}
@@ -767,6 +767,43 @@ body {
 	width: 75vw;
 	height: 75vh;
 	margin-bottom: 5em;
+}
+#space-debris-map {
+	padding: 3em;
+	margin-bottom: 5em;
+	background: #333;
+	position: relative;
+	width: 1024px;
+	left: -144px;
+	text-align: center;
+	h3 {
+		color: white;
+		text-align: center;
+		margin: 0 0 1em 0;
+
+	}
+}
+.mapael .mapTooltip {
+	position: absolute;
+	background-color: #333;
+	moz-opacity: 0.70;
+	opacity: 0.70;
+	filter: alpha(opacity=70);
+	border-radius: 10px;
+	padding: 10px;
+	z-index: 1000;
+	max-width: 200px;
+	display: none;
+	color: #fff;
+}
+.plot {
+	fill: transparentize($pink, .3);
+	border: 1px solid $pink;
+}
+.area {
+	&:hover {
+		//fill: $darkBlue;
+	}
 }
 .footnote {
 	position: absolute;
