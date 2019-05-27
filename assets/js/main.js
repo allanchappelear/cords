@@ -5,28 +5,28 @@
 //Build Characters for Intro Animation
 
 function setUpCharacters() {
-  var $sentences = $('.intro-debris');
+	var $sentences = $('.intro-debris');
 
   // Run for each sentence
   $sentences.each(function() {
-    var $sentence = $(this);
-    var newContent = '';
+  	var $sentence = $(this);
+  	var newContent = '';
 
     // Go through all characters of the sentence
     for (i = 0; i < $sentence.text().length; i++) {
-      var substring = $sentence.text().substr(i, 1);
+    	var substring = $sentence.text().substr(i, 1);
 
       // If we have a character, wrap it
       if (substring != " ") {
-        newContent += '<span>' + substring + '</span>';
+      	newContent += '<span>' + substring + '</span>';
       } else {
-        newContent += substring;
+      	newContent += substring;
       } 
-    }
+  }
 
     // Replace content
     $sentence.html(newContent); 
-  });
+});
 }
 
 setUpCharacters();
@@ -62,17 +62,21 @@ $(window).on('load', function() {
 	
 });
 
-$(window).on('scroll', function(e) {
-	 var scroll = $(this).scrollTop();
-            var opacity = 1 - (scroll / 1000);
-            var headingParallax = -scroll / 6;
-            $('#heading').css({transform: 'translateY(' + headingParallax +'px)'});
-            $('p.lead').css({transform: 'translateY(' + headingParallax +'px)'});
 
-            if (opacity > 0) {
-                $('.header').css('opacity', opacity);
-                
-            }
+
+
+
+$(window).on('scroll', function(e) {
+	var scroll = $(this).scrollTop();
+	var opacity = 1 - (scroll / 1000);
+	var headingParallax = -scroll / 6;
+	$('#heading').css({transform: 'translateY(' + headingParallax +'px)'});
+	$('p.lead').css({transform: 'translateY(' + headingParallax +'px)'});
+
+	if (opacity > 0) {
+		$('.header').css('opacity', opacity);
+
+	}
 	$(".is-animated").each(function(i, el) {
 		
 		var el = $(el);
@@ -82,58 +86,18 @@ $(window).on('scroll', function(e) {
 			}, 500);
 		}
 	});
+	$(".debris").each(function(i, el) {
+		var el = $(el);
+		if ($('#section2').visible(true)) {
+			el.addClass("show"); 
+		}
+	});
 	$(".rebr-section").each(function(i, el) {
 		var el = $(el);
 		if (el.visible(true)) {
 			el.addClass("explode"); 
 		}
 	});
-	var inView = false;
-	 if($('#chart').visible(true)) {
-        if (inView) { return; }
-        inView = true;
-
-        	var spaceObj = document.getElementById('myChart').getContext('2d');
-		    var myChart = new Chart(spaceObj, {
-		    	type: 'line',
-		    	data: {
-		    		labels: ['1960', '1970', '1980', '1990', '2000', '2010'],
-		    		datasets: [{
-		    			label: '# Space Objects',
-		    			data: [0, 100, 250, 500, 1200, 2000],
-		    			backgroundColor: [
-		    			'rgba(255, 99, 132, 0.2)',
-		    			'rgba(54, 162, 235, 0.2)',
-		    			'rgba(255, 206, 86, 0.2)',
-		    			'rgba(75, 192, 192, 0.2)',
-		    			'rgba(153, 102, 255, 0.2)',
-		    			'rgba(255, 159, 64, 0.2)'
-		    			],
-		    			borderColor: [
-		    			'rgba(255, 99, 132, 1)',
-		    			'rgba(54, 162, 235, 1)',
-		    			'rgba(255, 206, 86, 1)',
-		    			'rgba(75, 192, 192, 1)',
-		    			'rgba(153, 102, 255, 1)',
-		    			'rgba(255, 159, 64, 1)'
-		    			],
-		    			borderWidth: 1
-		    		}]
-		    	},
-		    	options: {
-		    		scales: {
-		    			yAxes: [{
-		    				ticks: {
-		    					beginAtZero: true
-		    				}
-		    			}]
-		    		}
-		    	}
-		    });
-    } else {
-        inView = false;  
-    }
-    console.log(inView);
 	
 });
 
@@ -142,6 +106,64 @@ $(window).on('scroll', function(e) {
 
 $( document ).ready(function() {
 
+	var inView = false;
+
+	function isScrolledIntoView(elem)
+	{
+		var docViewTop = $(window).scrollTop();
+		var docViewBottom = docViewTop + $(window).height();
+
+		var elemTop = $(elem).offset().top;
+		var elemBottom = elemTop + $(elem).height();
+
+		return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
+	}
+
+	$(window).scroll(function() {
+		if (isScrolledIntoView('#myChart')) {
+			if (inView) { return; }
+			inView = true;
+			var spaceObj = document.getElementById('myChart').getContext('2d');
+			var myChart = new Chart(spaceObj, {
+				type: 'line',
+				data: {
+					labels: ['1960', '1970', '1980', '1990', '2000', '2010'],
+					datasets: [{
+						label: '# Space Objects',
+						data: [0, 100, 250, 500, 1200, 2000],
+						backgroundColor: [
+						'rgba(255, 99, 132, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(255, 206, 86, 0.2)',
+						'rgba(75, 192, 192, 0.2)',
+						'rgba(153, 102, 255, 0.2)',
+						'rgba(255, 159, 64, 0.2)'
+						],
+						borderColor: [
+						'rgba(255, 99, 132, 1)',
+						'rgba(54, 162, 235, 1)',
+						'rgba(255, 206, 86, 1)',
+						'rgba(75, 192, 192, 1)',
+						'rgba(153, 102, 255, 1)',
+						'rgba(255, 159, 64, 1)'
+						],
+						borderWidth: 1
+					}]
+				},
+				options: {
+					scales: {
+						yAxes: [{
+							ticks: {
+								beginAtZero: true
+							}
+						}]
+					}
+				}
+			});
+		} else {
+			inView = false;  
+		}
+	});
 
 
 

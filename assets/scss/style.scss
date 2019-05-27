@@ -108,7 +108,7 @@ body {
 		font-weight: 700;
 		letter-spacing: -2px;
 		font-size: 3.2em;
-	
+
 	}
 	h2 {
 		font-weight: 700;
@@ -482,7 +482,6 @@ body {
 	#section2 {
 		.section-container {
 			max-width: 990px;
-
 		}
 		.debris {
 			position: fixed;
@@ -491,44 +490,44 @@ body {
 			z-index: 1000;
 		}
 		.debris1 {
-			right: 30vw;
+			right: 10vw;
 			&.show {
-				animation: move-debris 2s 2;
+				animation: move-debris 2s 3;
 			}
 		}
 		.debris2 {
 			left: 30px;
 			top: -130vh;
 			&.show {
-				animation: move-debris 6s 2;
+				animation: move-debris 6s 3;
 			}
 		}
 		.debris3 {
 			left: 75vw;
 			top: -100vh;
 			&.show {
-				animation: move-debris 4s 2;
+				animation: move-debris 4s 3;
 			}
 		}
 		.debris4 {
 			left: 15vw;
 			top: -150vh;
 			&.show {
-				animation: move-debris 8s 2;
+				animation: move-debris 8s 3;
 			}
 		}
 		.debris5 {
 			left: 25vw;
 			top: -200vh;
 			&.show {
-				animation: move-debris 2s 2;
+				animation: move-debris 2s 3;
 			}
 		}
 		.debris6 {
 			left: 80vw;
 			top: -120vh;
 			&.show {
-				animation: move-debris 2s 2;
+				animation: move-debris 2s 3;
 			}
 		}
 		p.wrap {
@@ -544,7 +543,6 @@ body {
 			}
 		}
 		.section-container {
-			
 			z-index: 100;
 			position: relative;
 		}
@@ -554,6 +552,7 @@ body {
 		.timeLine {
 			background: black;
 		}
+
 	}
 	#section3 {
 		//background-image: url(../../dist/images/Creating-a-path-CORDS.jpg);
@@ -568,14 +567,22 @@ body {
 	}
 	#section4 {
 		#re-entry {
-			background: #333;
-			width: 72vw;
-			left: -10vw;
+			width: 1024px;
+			height: 579px;
+			background: #ddd;
 			position: relative;
+			left: -145px;
+			margin-top: 0;
 			margin-bottom: 5em;
+
 		}
 		.section-container {
-			
+			.intro-caption {
+				margin-top: -220px;
+				margin-bottom: 200px;
+				position: relative;
+				color: white;
+			}
 		}
 		.fp-tableCell {
 
@@ -614,8 +621,11 @@ body {
 }
 
 #chart2 {
-	
-}
+			background: white;
+			padding: 3em;
+			width: 40vw;
+			height: auto;
+		}
 
 /* Stars 
 ------------------------------------- */
@@ -692,6 +702,10 @@ body {
 		&.cords {
 			background-image: url(../../dist/images/Creating-a-path-CORDS.jpg);
 			background-size: cover;
+			.caption {
+				bottom: auto;
+				top: 5%;
+			}
 
 		}
 		
@@ -899,48 +913,48 @@ blockquote {
 
 	.rebr-section {
 		position: absolute;
-	    left: 42%;
-	    top: 33%;
-	    transition: all .5s ease-in-out;
-	    .caption {
-	    	position: absolute;
-	    	top: -15%;
-	    	left: -35%;
-	    	&:after {
-	    		width: 1px;
-	    		content: '';
-	    		height: 35px;
-	    		background: black;
-	    		position: absolute;
-	    		top: 20px;
-	    		left: 50%;
-	    		transform: rotate(-20deg);
+		left: 42%;
+		top: 33%;
+		transition: all .5s ease-in-out;
+		.caption {
+			position: absolute;
+			top: -15%;
+			left: -35%;
+			&:after {
+				width: 1px;
+				content: '';
+				height: 35px;
+				background: black;
+				position: absolute;
+				top: 20px;
+				left: 50%;
+				transform: rotate(-20deg);
 
-	    	}
-	    	p {
-	    		font-family:  "Helvetica Neue", "Helvetica"
+			}
+			p {
+				font-family:  "Helvetica Neue", "Helvetica"
 				Helvetica, Arial, "Lucida Grande", sans-serif;
 				font-size: 12px;
 				font-weight: 700;
-	    	}
-	    	
-	    	&:after {
-	    		content: '';
-	    	}
-	    }
-	    img {
-	    	transition: all .5s ease-in-out;
-	    }
-	    &:hover {
-	    	img {
-	    		transform: scale(1.1);
-	    	}
-	    }
+			}
+
+			&:after {
+				content: '';
+			}
+		}
+		img {
+			transition: all .5s ease-in-out;
+		}
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}
+		}
 		&.housing-dome {
 			z-index: 10;
 			&.explode {
 				top: 8%;
-    			left: 8%;
+				left: 8%;
 			}
 		}
 		&.heat-shield {
@@ -950,21 +964,21 @@ blockquote {
 				left: 18%;
 			}
 			.caption {
-			   	top: -30%;
-		    	left: 75%;
-		    	width: 160px;
-		    	&:after {
-		    		top: 20px;
-		    		left: 0;
-		    		transform: rotate(20deg);
-		    	}
-		    	p {
-		    		font-family:  "Helvetica Neue", "Helvetica"
+				top: -30%;
+				left: 75%;
+				width: 160px;
+				&:after {
+					top: 20px;
+					left: 0;
+					transform: rotate(20deg);
+				}
+				p {
+					font-family:  "Helvetica Neue", "Helvetica"
 					Helvetica, Arial, "Lucida Grande", sans-serif;
 					font-size: 12px;
 					font-weight: 700;
-		    	}
-		    }
+				}
+			}
 		}
 		
 		&.antenna {
@@ -974,21 +988,21 @@ blockquote {
 				left: 28%;
 			}
 			.caption {
-			   	top: 126%;
-		    	left: -60%;
-		    	width: 160px;
-		    	&:after {
-		    		top: -35px;
-		    		left: 25%;
-		    		transform: rotate(20deg);
-		    	}
-		    	p {
-		    		font-family:  "Helvetica Neue", "Helvetica"
+				top: 126%;
+				left: -60%;
+				width: 160px;
+				&:after {
+					top: -35px;
+					left: 25%;
+					transform: rotate(20deg);
+				}
+				p {
+					font-family:  "Helvetica Neue", "Helvetica"
 					Helvetica, Arial, "Lucida Grande", sans-serif;
 					font-size: 12px;
 					font-weight: 700;
-		    	}
-		    }
+				}
+			}
 		}
 		&.modem {
 			z-index: 7;
@@ -997,21 +1011,21 @@ blockquote {
 				left: 32%;
 			}
 			.caption {
-			   	top: -50%;
-		    	left: 15%;
-		    	width: 160px;
-		    	&:after {
-		    		top: 15px;
-		    		left: 25%;
-		    		transform: rotate(20deg);
-		    	}
-		    	p {
-		    		font-family:  "Helvetica Neue", "Helvetica"
+				top: -50%;
+				left: 15%;
+				width: 160px;
+				&:after {
+					top: 15px;
+					left: 25%;
+					transform: rotate(20deg);
+				}
+				p {
+					font-family:  "Helvetica Neue", "Helvetica"
 					Helvetica, Arial, "Lucida Grande", sans-serif;
 					font-size: 12px;
 					font-weight: 700;
-		    	}
-		    }
+				}
+			}
 		}
 		&.battery-chassis {
 			z-index: 6;
@@ -1020,22 +1034,22 @@ blockquote {
 				left: 37%;
 			}
 			.caption {
-			   	top: 210%;
-		    	left: -110%;
-		    	width: 160px;
-		    	&:after {
-		    		top: -65px;
-		    		left: 40%;
-		    		height: 60px;
-		    		transform: rotate(20deg);
-		    	}
-		    	p {
-		    		font-family:  "Helvetica Neue", "Helvetica"
+				top: 210%;
+				left: -110%;
+				width: 160px;
+				&:after {
+					top: -65px;
+					left: 40%;
+					height: 60px;
+					transform: rotate(20deg);
+				}
+				p {
+					font-family:  "Helvetica Neue", "Helvetica"
 					Helvetica, Arial, "Lucida Grande", sans-serif;
 					font-size: 12px;
 					font-weight: 700;
-		    	}
-		    }
+				}
+			}
 		}
 		&.heat-shield-nose {
 			z-index: 5;
@@ -1044,22 +1058,22 @@ blockquote {
 				left: 41%;
 			}
 			.caption {
-			   	top: -60%;
-		    	left: 55%;
-		    	width: 160px;
-		    	&:after {
-		    		top: 25px;
-		    		left: 35%;
-		    		height: 60px;
-		    		transform: rotate(20deg);
-		    	}
-		    	p {
-		    		font-family:  "Helvetica Neue", "Helvetica"
+				top: -60%;
+				left: 55%;
+				width: 160px;
+				&:after {
+					top: 25px;
+					left: 35%;
+					height: 60px;
+					transform: rotate(20deg);
+				}
+				p {
+					font-family:  "Helvetica Neue", "Helvetica"
 					Helvetica, Arial, "Lucida Grande", sans-serif;
 					font-size: 12px;
 					font-weight: 700;
-		    	}
-		    }
+				}
+			}
 		}
 		&.housing {
 			z-index: 4;
@@ -1068,22 +1082,22 @@ blockquote {
 				left: 51%;
 			}
 			.caption {
-			   	top: 105%;
-		    	left: -15%;
-		    	width: 160px;
-		    	&:after {
-		    		top: -55px;
-		    		left: 25%;
-		    		height: 60px;
-		    		transform: rotate(20deg);
-		    	}
-		    	p {
-		    		font-family:  "Helvetica Neue", "Helvetica"
+				top: 105%;
+				left: -15%;
+				width: 160px;
+				&:after {
+					top: -55px;
+					left: 25%;
+					height: 60px;
+					transform: rotate(20deg);
+				}
+				p {
+					font-family:  "Helvetica Neue", "Helvetica"
 					Helvetica, Arial, "Lucida Grande", sans-serif;
 					font-size: 12px;
 					font-weight: 700;
-		    	}
-		    }
+				}
+			}
 		}
 		&.bottom-plate {
 			z-index: 3;
@@ -1092,22 +1106,22 @@ blockquote {
 				left: 65%;
 			}
 			.caption {
-			   	top: -30%;
-		    	left: 35%;
-		    	width: 200px;
-		    	&:after {
-		    		top: 25px;
-		    		left: 35%;
-		    		height: 60px;
-		    		transform: rotate(20deg);
-		    	}
-		    	p {
-		    		font-family:  "Helvetica Neue", "Helvetica"
+				top: -30%;
+				left: 35%;
+				width: 200px;
+				&:after {
+					top: 25px;
+					left: 35%;
+					height: 60px;
+					transform: rotate(20deg);
+				}
+				p {
+					font-family:  "Helvetica Neue", "Helvetica"
 					Helvetica, Arial, "Lucida Grande", sans-serif;
 					font-size: 12px;
 					font-weight: 700;
-		    	}
-		    }
+				}
+			}
 		}
 	}
 }
