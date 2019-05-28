@@ -54,10 +54,29 @@ $(window).on('load', function() {
 		$('#loader').fadeOut('slow');
 	}, 1000);
 	$('#section0 #header-intro').addClass('in');
-	$('#section0 #header-intro')[0].play();
+	$('#header-intro')[0].play();
+	//$('#section0 #header-intro')[0].play();
 	setTimeout(function(){
 		$('#fp-nav').addClass('in');
 	}, 3000);
+	//First Slide Animations
+		
+		
+		setTimeout(function(){
+			$('#section0 #debris').addClass('in');
+		}, 1000);
+		setTimeout(function(){
+			$('#section0 #debris').fadeOut(1000);
+		}, 6000);
+
+		setTimeout(function(){
+			$('#section0 p').addClass('in');
+
+		}, 10000);
+
+		setTimeout(function(){
+			$('#section0 h1').addClass('in');
+		}, 7000);
 	
 	
 });
@@ -73,12 +92,22 @@ $(window).on('scroll', function(e) {
 	$('#heading').css({transform: 'translateY(' + headingParallax +'px)'});
 	$('p.lead').css({transform: 'translateY(' + headingParallax +'px)'});
 
-	if (opacity > 0) {
+	/*if (opacity > 0) {
 		$('.header').css('opacity', opacity);
 
 	}
+	if (opacity < 0.2) {
+		$('.header').fadeOut();
+	} else {
+		$('.header').fadeIn();
+	}*/
+
+	if ($('#section0').visible(true) || $('#section5').visible(true)) {
+		$('#header-intro')[0].play();
+	} else {
+		$('#header-intro')[0].pause();
+	};
 	$(".is-animated").each(function(i, el) {
-		
 		var el = $(el);
 		if (el.visible(true)) {
 			setTimeout(function(){
@@ -95,19 +124,18 @@ $(window).on('scroll', function(e) {
 	$(".rebr-section").each(function(i, el) {
 		var el = $(el);
 		if (el.visible(true)) {
-			el.addClass("explode"); 
+			setTimeout(function(){
+				el.addClass("explode"); 
+			}, 500);
+			
 		}
 	});
 	
 });
 
 
-
-
 $( document ).ready(function() {
-
 	var inView = false;
-
 	function isScrolledIntoView(elem)
 	{
 		var docViewTop = $(window).scrollTop();
@@ -190,29 +218,9 @@ $( document ).ready(function() {
 		
 	});
 
-		//First Slide Animations
-		setTimeout(function(){
-			$('#section0 #header-intro').addClass('in');
-			$('#section0 #header-intro')[0].play();
-		}, 1000);
 		
-		setTimeout(function(){
-			$('#section0 #debris').addClass('in');
-		}, 1000);
-		setTimeout(function(){
-			$('#section0 #debris').fadeOut(1000);
-		}, 6000);
-
-		setTimeout(function(){
-			$('#section0 p').addClass('in');
-
-		}, 10000);
-
-		setTimeout(function(){
-			$('#section0 h1').addClass('in');
-		}, 7000);
 		
-		$('#header-intro').trigger('play');
+		
 	    // Second Slide Animations
 
 

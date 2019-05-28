@@ -107,7 +107,7 @@ body {
 	h1 {
 		font-weight: 700;
 		letter-spacing: -2px;
-		font-size: 3.2em;
+		font-size: 3.4em;
 
 	}
 	h2 {
@@ -148,7 +148,7 @@ body {
 		transition: all 1s ease-in-out;
 		opacity: 0;
 		&.in {
-			top: 268px;
+			top: 313px;
 			opacity: 1;
 		}
 		li {
@@ -185,6 +185,10 @@ body {
 		transition: transform .1s ease-out !important;
 	}
 	//FIRST SLIDE VIDEO
+	.header-wrapper {
+		height: 100vh;
+		position: relative;
+	}
 	.header {
 		text-align: center;
 		color: white;
@@ -198,12 +202,12 @@ body {
 		right: 0;
 		left: 0;
 		bottom: 0;
+		position: relative;
 		.wrapper {
-			background: #333;
-			width: 100vw;
+			width: auto;
 			height: 100vh;
 			z-index: 3;
-			position: relative;
+			position: fixed;
 		}
 		video {
 			position: fixed;
@@ -469,7 +473,7 @@ body {
 	}
 	#section1 {
 		//background-image: url(../../dist/images/sputnik.png);
-		padding-top: 100vh;
+		//padding-top: 100vh;
 
 		.section-container {
 			padding-right: 400px;
@@ -615,7 +619,7 @@ body {
 	margin-right: -82px;
 	margin-left: 40px;
 	margin-bottom: 0;
-	top: -1px;
+	top: -24px;
 	//background: transparentize(white, .2);
 	//top: -5vh;
 }
@@ -630,7 +634,7 @@ body {
 /* Stars 
 ------------------------------------- */
 .stars, .twinkling, .clouds {
-	position: fixed;
+	position: absolute;
 	display:block;
 	top:0; bottom:0;
 	left:0; right:0;
@@ -638,12 +642,12 @@ body {
 }
 
 .stars {
-	z-index: 1;
+	z-index: 3;
 	background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
 }
 
 .twinkling{
-	z-index: 1;
+	z-index: 3;
 	background:transparent url('https://image.ibb.co/ir1DE8/twinkling.png') repeat top center;
 	animation: move-twink-back 200s linear infinite;
 }
@@ -664,6 +668,15 @@ body {
 	to {background-position:10000px 0;}
 }
 
+
+
+.fixed-wrapper {
+	position: fixed;
+	width: 52vw;
+}
+.main-wrapper {
+	background: #333;
+}
 
 //Branded Pop Outs
 
@@ -760,6 +773,16 @@ body {
 		}
 	}
 }
+
+.background-wrapper {
+	width: 100vw;
+	height: auto;
+	position: relative;
+	z-index: 4;
+	background: #333;
+	//margin-top: 100vh;
+}
+
 #spaceObjects {
 	border: 0;
 	position: relative;
@@ -1166,11 +1189,38 @@ blockquote {
 
 
 
+.full-screen-video-space {
+    display: block;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 40vh;
+    color: white;
+    z-index: 5;
+    h2 {
+    	margin-top: 45vh;
+    	z-index: 30;
+    	position: relative;
+    }
+    p {
+		font-family:  "Helvetica Neue", "Helvetica"
+		Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 300;
+		font-size: 1.3em;
+		color: white;
+		z-index: 30;
+    	position: relative;	       
+    }
+    .container-990 {
+    	width:  990px;
+    	margin: 0 auto;
+    }
 
+}
 /*===== // Resonsive Vertical Timeline =====*/
 #conference-timeline {
 	position: absolute;
-	top: 100vh;
+	top: 0;
 	right: 4vw;
 	width: 38vw;
 	padding-top: 7em;
