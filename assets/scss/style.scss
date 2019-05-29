@@ -228,6 +228,7 @@ body {
 			position: relative;
 			background: none;
 			width: 100vw;
+
 			background: transparentize($darkBlue, .4);
 			margin: 0 auto;
 			left: 0;
@@ -243,7 +244,11 @@ body {
 					position: absolute;
 					top: 40%;
 					left: 50%;
+					width: 990px;
+					margin: 0 auto;
+					text-align: center;
 					transform: translate(-50%, -50%);
+
 					span:first-child {
 						position: relative;
 						animation: animate-d 8s 1;
@@ -672,7 +677,7 @@ body {
 
 .fixed-wrapper {
 	position: fixed;
-	width: 52vw;
+	width: 50vw;
 }
 .main-wrapper {
 	background: #333;
@@ -829,9 +834,11 @@ body {
 	}
 }
 .footnote {
-	position: absolute;
-	left: 5vw;
-	margin-top:-3vw;
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    /* left: 5vw; */
+    /* margin-top: -3vw; */
 	a {
 		display: block;
 		width: 42px;
@@ -865,11 +872,12 @@ body {
 			left: -330px;
 			border-radius: 3px;
 			border: 1px solid #333;
-			p {
-				font-family:  "Helvetica Neue", "Helvetica"
+			font-family:  "Helvetica Neue", "Helvetica"
 				Helvetica, Arial, "Lucida Grande", sans-serif;
 				color: white;
 				font-size: 12px;
+			p {
+				
 			}
 
 		}
@@ -1185,10 +1193,17 @@ blockquote {
 		}
 	}
 }
+span.sentence-cap {
+	font-size: 2.5em;
+	line-height: .9;
+}
 
 
-
-
+#section6 {
+	.section-container {
+		padding-top: 5em;
+	}
+}
 .full-screen-video-space {
     display: block;
     left: 0;
@@ -1197,6 +1212,8 @@ blockquote {
     height: 40vh;
     color: white;
     z-index: 5;
+    background: transparentize($darkBlue, 1);
+
     h2 {
     	margin-top: 45vh;
     	z-index: 30;
@@ -1206,7 +1223,7 @@ blockquote {
 		font-family:  "Helvetica Neue", "Helvetica"
 		Helvetica, Arial, "Lucida Grande", sans-serif;
 		font-weight: 300;
-		font-size: 1.3em;
+		font-size: 1.5em;
 		color: white;
 		z-index: 30;
     	position: relative;	       
@@ -1216,6 +1233,42 @@ blockquote {
     	margin: 0 auto;
     }
 
+}
+
+
+.related-articles {
+	z-index: 100;
+	position: relative;
+	background: #333;
+	color: white;
+	padding-top: 5em;
+	.wrapper {
+    	padding: 1em;
+    	background: #444;	
+    	img {
+    		width: 100%;
+    		margin-bottom: 1em;
+    	}
+    }
+    h3 { 
+    	font-size: 1em;
+    }
+	p {
+		color: white;
+		font-family:  "Helvetica Neue", "Helvetica"
+		Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 500;
+		font-size: .8em;
+	}
+}
+.footer {
+	background: #000;
+	position: relative;
+	z-index: 1000;
+	padding: 3em;
+	.pull-right {
+		float: right;
+	}
 }
 /*===== // Resonsive Vertical Timeline =====*/
 #conference-timeline {
