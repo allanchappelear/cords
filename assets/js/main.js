@@ -92,15 +92,7 @@ $(window).on('scroll', function(e) {
 	$('#heading').css({transform: 'translateY(' + headingParallax +'px)'});
 	$('p.lead').css({transform: 'translateY(' + headingParallax +'px)'});
 
-	/*if (opacity > 0) {
-		$('.header').css('opacity', opacity);
 
-	}
-	if (opacity < 0.2) {
-		$('.header').fadeOut();
-	} else {
-		$('.header').fadeIn();
-	}*/
 
 	if ($('#section0').visible(true) || $('#section5').visible(true)) {
 		$('#header-intro')[0].play();

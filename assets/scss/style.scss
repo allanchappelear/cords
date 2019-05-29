@@ -1242,9 +1242,11 @@ span.sentence-cap {
 	background: #333;
 	color: white;
 	padding-top: 5em;
+	padding-bottom: 5em;
 	.wrapper {
     	padding: 1em;
     	background: #444;	
+    	min-height: 430px;
     	img {
     		width: 100%;
     		margin-bottom: 1em;
@@ -1277,7 +1279,7 @@ span.sentence-cap {
 	right: 4vw;
 	width: 38vw;
 	padding-top: 13em;
-	height: 200vh;
+	height: 100%;
 	z-index: 5;
 }
 .main-timeline{
